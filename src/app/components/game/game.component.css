@@ -1,0 +1,40 @@
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url(src\assets\pexels-hasan-albari-1229861.jpg);
+  background-size: cover;
+  
+}
+
+h1 {
+  color: red;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+li {
+  cursor: pointer;
+  color: blue;
+  margin: 20px;
+  animation-name: fade-in;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
